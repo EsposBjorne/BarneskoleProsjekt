@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Barneskole", "Barneskole\Barneskole.csproj", "{C58755FB-41A2-4DA5-BCEA-735D317DECBE}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BarneskoleSetup", "BarneskoleSetup\BarneskoleSetup.vdproj", "{B61A88B5-F52C-4376-BD60-A39E7F80600A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C58755FB-41A2-4DA5-BCEA-735D317DECBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C58755FB-41A2-4DA5-BCEA-735D317DECBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C58755FB-41A2-4DA5-BCEA-735D317DECBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C58755FB-41A2-4DA5-BCEA-735D317DECBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B61A88B5-F52C-4376-BD60-A39E7F80600A}.Debug|Any CPU.ActiveCfg = Debug
+		{B61A88B5-F52C-4376-BD60-A39E7F80600A}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

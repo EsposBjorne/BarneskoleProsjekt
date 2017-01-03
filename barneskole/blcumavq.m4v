@@ -1,0 +1,1650 @@
+﻿using System.Windows.Forms;
+namespace Barneskole
+{
+    partial class frmHoved
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.butResultat = new System.Windows.Forms.Button();
+            this.butVisning = new System.Windows.Forms.Button();
+            this.butTester = new System.Windows.Forms.Button();
+            this.butBrukere = new System.Windows.Forms.Button();
+            this.butElever = new System.Windows.Forms.Button();
+            this.butKlasser = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.filToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnyAvslutt = new System.Windows.Forms.ToolStripMenuItem();
+            this.administreringToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hjelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.omToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.loggUtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.butFag = new System.Windows.Forms.Button();
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.panelType = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.tabcontrol = new System.Windows.Forms.TabControl();
+            this.tabVisning = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tabResultat = new System.Windows.Forms.TabPage();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
+            this.dgvResultat = new System.Windows.Forms.DataGridView();
+            this.tabElever = new System.Windows.Forms.TabPage();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label15 = new System.Windows.Forms.Label();
+            this.dgvElever = new System.Windows.Forms.DataGridView();
+            this.tabFag = new System.Windows.Forms.TabPage();
+            this.dgvFag = new System.Windows.Forms.DataGridView();
+            this.butFagSlett = new System.Windows.Forms.Button();
+            this.butFagReg = new System.Windows.Forms.Button();
+            this.butFagEndre = new System.Windows.Forms.Button();
+            this.txtFagnavn = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tabTester = new System.Windows.Forms.TabPage();
+            this.tabBrukere = new System.Windows.Forms.TabPage();
+            this.panelBrukere = new System.Windows.Forms.Panel();
+            this.lblBrukere = new System.Windows.Forms.Label();
+            this.butBrukerTøm = new System.Windows.Forms.Button();
+            this.lblBrukerfornavn = new System.Windows.Forms.Label();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.butRegBruker = new System.Windows.Forms.Button();
+            this.lblBrukerPassord = new System.Windows.Forms.Label();
+            this.lblBrukerBrukernavn = new System.Windows.Forms.Label();
+            this.lblBrukerEtternavn = new System.Windows.Forms.Label();
+            this.butSlett = new System.Windows.Forms.Button();
+            this.lblBrukerType = new System.Windows.Forms.Label();
+            this.butEndre = new System.Windows.Forms.Button();
+            this.txtBrukerBnavn = new System.Windows.Forms.TextBox();
+            this.cmbType = new System.Windows.Forms.ComboBox();
+            this.txtFornavn = new System.Windows.Forms.TextBox();
+            this.txtEtternavn = new System.Windows.Forms.TextBox();
+            this.dgvBrukere = new System.Windows.Forms.DataGridView();
+            this.tabKlasser = new System.Windows.Forms.TabPage();
+            this.lblBrukerstatus = new System.Windows.Forms.Label();
+            this.dgvKlasser = new System.Windows.Forms.DataGridView();
+            this.panelKlasser = new System.Windows.Forms.Panel();
+            this.lblKlasser = new System.Windows.Forms.Label();
+            this.butKlasseTøm = new System.Windows.Forms.Button();
+            this.lblSkoleår = new System.Windows.Forms.Label();
+            this.butKlasseReg = new System.Windows.Forms.Button();
+            this.lblBetegnelse = new System.Windows.Forms.Label();
+            this.butKlasseSlett = new System.Windows.Forms.Button();
+            this.butKlasseEndre = new System.Windows.Forms.Button();
+            this.txtBetegnelse = new System.Windows.Forms.TextBox();
+            this.txtSkoleår = new System.Windows.Forms.TextBox();
+            this.panelTester = new System.Windows.Forms.Panel();
+            this.lblTester = new System.Windows.Forms.Label();
+            this.butTestTøm = new System.Windows.Forms.Button();
+            this.lblTestdato = new System.Windows.Forms.Label();
+            this.butTestReg = new System.Windows.Forms.Button();
+            this.lblTestfil = new System.Windows.Forms.Label();
+            this.lblTestnavn = new System.Windows.Forms.Label();
+            this.butTestSlett = new System.Windows.Forms.Button();
+            this.lblTestfag = new System.Windows.Forms.Label();
+            this.butTestEndre = new System.Windows.Forms.Button();
+            this.txtTestnavn = new System.Windows.Forms.TextBox();
+            this.cmbTestfag = new System.Windows.Forms.ComboBox();
+            this.txtTestdato = new System.Windows.Forms.TextBox();
+            this.dgvTester = new System.Windows.Forms.DataGridView();
+            this.menuStrip1.SuspendLayout();
+            this.panelType.SuspendLayout();
+            this.tabcontrol.SuspendLayout();
+            this.tabVisning.SuspendLayout();
+            this.tabResultat.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultat)).BeginInit();
+            this.tabElever.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvElever)).BeginInit();
+            this.tabFag.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFag)).BeginInit();
+            this.tabTester.SuspendLayout();
+            this.tabBrukere.SuspendLayout();
+            this.panelBrukere.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBrukere)).BeginInit();
+            this.tabKlasser.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKlasser)).BeginInit();
+            this.panelKlasser.SuspendLayout();
+            this.panelTester.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTester)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // butResultat
+            // 
+            this.butResultat.FlatAppearance.BorderSize = 0;
+            this.butResultat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.butResultat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butResultat.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butResultat.Location = new System.Drawing.Point(3, 42);
+            this.butResultat.Name = "butResultat";
+            this.butResultat.Size = new System.Drawing.Size(125, 39);
+            this.butResultat.TabIndex = 0;
+            this.butResultat.Text = "Resultat";
+            this.butResultat.UseVisualStyleBackColor = true;
+            this.butResultat.Click += new System.EventHandler(this.butResultat_Click);
+            // 
+            // butVisning
+            // 
+            this.butVisning.FlatAppearance.BorderSize = 0;
+            this.butVisning.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.butVisning.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butVisning.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butVisning.Location = new System.Drawing.Point(3, 3);
+            this.butVisning.Name = "butVisning";
+            this.butVisning.Size = new System.Drawing.Size(120, 37);
+            this.butVisning.TabIndex = 2;
+            this.butVisning.Text = "Visning";
+            this.butVisning.UseVisualStyleBackColor = true;
+            this.butVisning.Click += new System.EventHandler(this.butVis_Click);
+            // 
+            // butTester
+            // 
+            this.butTester.FlatAppearance.BorderSize = 0;
+            this.butTester.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.butTester.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butTester.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butTester.Location = new System.Drawing.Point(3, 170);
+            this.butTester.Name = "butTester";
+            this.butTester.Size = new System.Drawing.Size(120, 32);
+            this.butTester.TabIndex = 3;
+            this.butTester.Text = "Tester";
+            this.butTester.UseVisualStyleBackColor = true;
+            this.butTester.Click += new System.EventHandler(this.butTester_Click);
+            // 
+            // butBrukere
+            // 
+            this.butBrukere.FlatAppearance.BorderSize = 0;
+            this.butBrukere.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.butBrukere.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butBrukere.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butBrukere.Location = new System.Drawing.Point(3, 208);
+            this.butBrukere.Name = "butBrukere";
+            this.butBrukere.Size = new System.Drawing.Size(118, 35);
+            this.butBrukere.TabIndex = 4;
+            this.butBrukere.Text = "Brukere";
+            this.butBrukere.UseVisualStyleBackColor = true;
+            this.butBrukere.Click += new System.EventHandler(this.butBrukere_Click);
+            // 
+            // butElever
+            // 
+            this.butElever.FlatAppearance.BorderSize = 0;
+            this.butElever.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.butElever.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butElever.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butElever.Location = new System.Drawing.Point(3, 87);
+            this.butElever.Name = "butElever";
+            this.butElever.Size = new System.Drawing.Size(120, 33);
+            this.butElever.TabIndex = 5;
+            this.butElever.Text = "Elever";
+            this.butElever.UseVisualStyleBackColor = true;
+            this.butElever.Click += new System.EventHandler(this.butElever_Click);
+            // 
+            // butKlasser
+            // 
+            this.butKlasser.FlatAppearance.BorderSize = 0;
+            this.butKlasser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.butKlasser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butKlasser.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butKlasser.Location = new System.Drawing.Point(0, 249);
+            this.butKlasser.Name = "butKlasser";
+            this.butKlasser.Size = new System.Drawing.Size(123, 35);
+            this.butKlasser.TabIndex = 6;
+            this.butKlasser.Text = "Klasser";
+            this.butKlasser.UseVisualStyleBackColor = true;
+            this.butKlasser.Click += new System.EventHandler(this.butKlasser_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.AutoSize = false;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.filToolStripMenuItem,
+            this.administreringToolStripMenuItem,
+            this.hjelpToolStripMenuItem,
+            this.loggUtToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(866, 24);
+            this.menuStrip1.TabIndex = 9;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // filToolStripMenuItem
+            // 
+            this.filToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+            this.filToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnyAvslutt});
+            this.filToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.filToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.filToolStripMenuItem.Name = "filToolStripMenuItem";
+            this.filToolStripMenuItem.Size = new System.Drawing.Size(32, 20);
+            this.filToolStripMenuItem.Text = "Fil";
+            // 
+            // mnyAvslutt
+            // 
+            this.mnyAvslutt.Name = "mnyAvslutt";
+            this.mnyAvslutt.Size = new System.Drawing.Size(114, 22);
+            this.mnyAvslutt.Text = "Avslutt";
+            this.mnyAvslutt.Click += new System.EventHandler(this.mnyAvslutt_Click);
+            // 
+            // administreringToolStripMenuItem
+            // 
+            this.administreringToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+            this.administreringToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.administreringToolStripMenuItem.Name = "administreringToolStripMenuItem";
+            this.administreringToolStripMenuItem.Size = new System.Drawing.Size(105, 20);
+            this.administreringToolStripMenuItem.Text = "Administrering";
+            // 
+            // hjelpToolStripMenuItem
+            // 
+            this.hjelpToolStripMenuItem.AutoSize = false;
+            this.hjelpToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+            this.hjelpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.omToolStripMenuItem});
+            this.hjelpToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hjelpToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.hjelpToolStripMenuItem.Name = "hjelpToolStripMenuItem";
+            this.hjelpToolStripMenuItem.Size = new System.Drawing.Size(47, 20);
+            this.hjelpToolStripMenuItem.Text = "Hjelp";
+            // 
+            // omToolStripMenuItem
+            // 
+            this.omToolStripMenuItem.Name = "omToolStripMenuItem";
+            this.omToolStripMenuItem.Size = new System.Drawing.Size(97, 22);
+            this.omToolStripMenuItem.Text = "Om";
+            this.omToolStripMenuItem.Click += new System.EventHandler(this.omToolStripMenuItem_Click);
+            // 
+            // loggUtToolStripMenuItem
+            // 
+            this.loggUtToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.loggUtToolStripMenuItem.Name = "loggUtToolStripMenuItem";
+            this.loggUtToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.loggUtToolStripMenuItem.Text = "Logg ut";
+            this.loggUtToolStripMenuItem.Click += new System.EventHandler(this.frmHoved_loggut);
+            // 
+            // butFag
+            // 
+            this.butFag.FlatAppearance.BorderSize = 0;
+            this.butFag.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.butFag.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butFag.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butFag.Location = new System.Drawing.Point(3, 126);
+            this.butFag.Name = "butFag";
+            this.butFag.Size = new System.Drawing.Size(120, 38);
+            this.butFag.TabIndex = 10;
+            this.butFag.Text = "Fag";
+            this.butFag.UseVisualStyleBackColor = true;
+            this.butFag.Click += new System.EventHandler(this.butFag_Click);
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblStatus.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Location = new System.Drawing.Point(729, 449);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(137, 17);
+            this.lblStatus.TabIndex = 11;
+            this.lblStatus.Text = "Statuslinje";
+            this.lblStatus.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            // 
+            // panelType
+            // 
+            this.panelType.Controls.Add(this.panel1);
+            this.panelType.Controls.Add(this.butFag);
+            this.panelType.Controls.Add(this.butKlasser);
+            this.panelType.Controls.Add(this.butVisning);
+            this.panelType.Controls.Add(this.butBrukere);
+            this.panelType.Controls.Add(this.butResultat);
+            this.panelType.Controls.Add(this.butTester);
+            this.panelType.Controls.Add(this.butElever);
+            this.panelType.Location = new System.Drawing.Point(0, 27);
+            this.panelType.Name = "panelType";
+            this.panelType.Size = new System.Drawing.Size(128, 415);
+            this.panelType.TabIndex = 12;
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(127, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(628, 439);
+            this.panel1.TabIndex = 1;
+            // 
+            // tabcontrol
+            // 
+            this.tabcontrol.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabcontrol.Controls.Add(this.tabVisning);
+            this.tabcontrol.Controls.Add(this.tabResultat);
+            this.tabcontrol.Controls.Add(this.tabElever);
+            this.tabcontrol.Controls.Add(this.tabFag);
+            this.tabcontrol.Controls.Add(this.tabTester);
+            this.tabcontrol.Controls.Add(this.tabBrukere);
+            this.tabcontrol.Controls.Add(this.tabKlasser);
+            this.tabcontrol.Location = new System.Drawing.Point(130, 27);
+            this.tabcontrol.Name = "tabcontrol";
+            this.tabcontrol.SelectedIndex = 0;
+            this.tabcontrol.Size = new System.Drawing.Size(736, 419);
+            this.tabcontrol.TabIndex = 13;
+            // 
+            // tabVisning
+            // 
+            this.tabVisning.Controls.Add(this.label2);
+            this.tabVisning.Location = new System.Drawing.Point(4, 22);
+            this.tabVisning.Name = "tabVisning";
+            this.tabVisning.Padding = new System.Windows.Forms.Padding(3);
+            this.tabVisning.Size = new System.Drawing.Size(728, 393);
+            this.tabVisning.TabIndex = 0;
+            this.tabVisning.Text = "Visning";
+            this.tabVisning.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(345, 184);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Visning";
+            // 
+            // tabResultat
+            // 
+            this.tabResultat.Controls.Add(this.textBox9);
+            this.tabResultat.Controls.Add(this.label22);
+            this.tabResultat.Controls.Add(this.comboBox4);
+            this.tabResultat.Controls.Add(this.label21);
+            this.tabResultat.Controls.Add(this.comboBox3);
+            this.tabResultat.Controls.Add(this.label17);
+            this.tabResultat.Controls.Add(this.label3);
+            this.tabResultat.Controls.Add(this.button7);
+            this.tabResultat.Controls.Add(this.button8);
+            this.tabResultat.Controls.Add(this.textBox7);
+            this.tabResultat.Controls.Add(this.textBox8);
+            this.tabResultat.Controls.Add(this.textBox10);
+            this.tabResultat.Controls.Add(this.label18);
+            this.tabResultat.Controls.Add(this.label19);
+            this.tabResultat.Controls.Add(this.label20);
+            this.tabResultat.Controls.Add(this.button9);
+            this.tabResultat.Controls.Add(this.dgvResultat);
+            this.tabResultat.Location = new System.Drawing.Point(4, 22);
+            this.tabResultat.Name = "tabResultat";
+            this.tabResultat.Padding = new System.Windows.Forms.Padding(3);
+            this.tabResultat.Size = new System.Drawing.Size(728, 393);
+            this.tabResultat.TabIndex = 1;
+            this.tabResultat.Text = "Resultat";
+            this.tabResultat.UseVisualStyleBackColor = true;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox9.Location = new System.Drawing.Point(164, 211);
+            this.textBox9.Multiline = true;
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(178, 103);
+            this.textBox9.TabIndex = 69;
+            // 
+            // label22
+            // 
+            this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(41, 208);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(121, 30);
+            this.label22.TabIndex = 68;
+            this.label22.Text = "Kommentar";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(164, 127);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(100, 21);
+            this.comboBox4.TabIndex = 67;
+            // 
+            // label21
+            // 
+            this.label21.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(41, 121);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(51, 30);
+            this.label21.TabIndex = 66;
+            this.label21.Text = "Test";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(164, 154);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(100, 21);
+            this.comboBox3.TabIndex = 65;
+            // 
+            // label17
+            // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(41, 148);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(78, 30);
+            this.label17.TabIndex = 64;
+            this.label17.Text = "Deltest";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(99, 10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(135, 37);
+            this.label3.TabIndex = 63;
+            this.label3.Text = "Resultater";
+            // 
+            // button7
+            // 
+            this.button7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(235, 329);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(107, 47);
+            this.button7.TabIndex = 62;
+            this.button7.Text = "Slett";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(148, 329);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(97, 47);
+            this.button8.TabIndex = 61;
+            this.button8.Text = "Endre";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox7.Location = new System.Drawing.Point(164, 181);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(178, 20);
+            this.textBox7.TabIndex = 59;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox8.Location = new System.Drawing.Point(164, 97);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 20);
+            this.textBox8.TabIndex = 58;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox10.Location = new System.Drawing.Point(164, 68);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(100, 20);
+            this.textBox10.TabIndex = 56;
+            // 
+            // label18
+            // 
+            this.label18.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(41, 178);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(72, 30);
+            this.label18.TabIndex = 54;
+            this.label18.Text = "Poeng";
+            // 
+            // label19
+            // 
+            this.label19.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(41, 62);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(87, 30);
+            this.label19.TabIndex = 53;
+            this.label19.Text = "Fornavn";
+            // 
+            // label20
+            // 
+            this.label20.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(41, 91);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(101, 30);
+            this.label20.TabIndex = 52;
+            this.label20.Text = "Etternavn";
+            // 
+            // button9
+            // 
+            this.button9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button9.AutoSize = true;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(8, 332);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(134, 41);
+            this.button9.TabIndex = 51;
+            this.button9.Text = "Registrer";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // dgvResultat
+            // 
+            this.dgvResultat.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvResultat.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
+            this.dgvResultat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResultat.Dock = System.Windows.Forms.DockStyle.Right;
+            this.dgvResultat.Location = new System.Drawing.Point(353, 3);
+            this.dgvResultat.Name = "dgvResultat";
+            this.dgvResultat.ReadOnly = true;
+            this.dgvResultat.Size = new System.Drawing.Size(372, 387);
+            this.dgvResultat.TabIndex = 49;
+            // 
+            // tabElever
+            // 
+            this.tabElever.Controls.Add(this.comboBox2);
+            this.tabElever.Controls.Add(this.label16);
+            this.tabElever.Controls.Add(this.label4);
+            this.tabElever.Controls.Add(this.button4);
+            this.tabElever.Controls.Add(this.button5);
+            this.tabElever.Controls.Add(this.comboBox1);
+            this.tabElever.Controls.Add(this.textBox1);
+            this.tabElever.Controls.Add(this.textBox3);
+            this.tabElever.Controls.Add(this.textBox5);
+            this.tabElever.Controls.Add(this.textBox6);
+            this.tabElever.Controls.Add(this.label7);
+            this.tabElever.Controls.Add(this.label10);
+            this.tabElever.Controls.Add(this.label11);
+            this.tabElever.Controls.Add(this.label14);
+            this.tabElever.Controls.Add(this.button6);
+            this.tabElever.Controls.Add(this.label15);
+            this.tabElever.Controls.Add(this.dgvElever);
+            this.tabElever.Location = new System.Drawing.Point(4, 22);
+            this.tabElever.Name = "tabElever";
+            this.tabElever.Padding = new System.Windows.Forms.Padding(3);
+            this.tabElever.Size = new System.Drawing.Size(728, 393);
+            this.tabElever.TabIndex = 2;
+            this.tabElever.Text = "Elever";
+            this.tabElever.UseVisualStyleBackColor = true;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(201, 229);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(100, 21);
+            this.comboBox2.TabIndex = 67;
+            // 
+            // label16
+            // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(41, 223);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(70, 30);
+            this.label16.TabIndex = 66;
+            this.label16.Text = "Klasse";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(99, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(88, 37);
+            this.label4.TabIndex = 63;
+            this.label4.Text = "Elever";
+            // 
+            // button4
+            // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(246, 251);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(96, 47);
+            this.button4.TabIndex = 62;
+            this.button4.Text = "Slett";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Location = new System.Drawing.Point(159, 251);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(86, 47);
+            this.button5.TabIndex = 61;
+            this.button5.Text = "Endre";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(201, 190);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(100, 21);
+            this.comboBox1.TabIndex = 60;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox1.Location = new System.Drawing.Point(201, 158);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 59;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox3.Location = new System.Drawing.Point(201, 101);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.TabIndex = 58;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox5.Location = new System.Drawing.Point(201, 131);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.TabIndex = 57;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox6.Location = new System.Drawing.Point(201, 70);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.TabIndex = 56;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(41, 184);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(66, 30);
+            this.label7.TabIndex = 55;
+            this.label7.Text = "Kjønn";
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(41, 154);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(101, 30);
+            this.label10.TabIndex = 54;
+            this.label10.Text = "Etternavn";
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(41, 62);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(159, 30);
+            this.label11.TabIndex = 53;
+            this.label11.Text = "Fødselsnummer";
+            // 
+            // label14
+            // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(41, 91);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(154, 30);
+            this.label14.TabIndex = 52;
+            this.label14.Text = "Personnummer";
+            // 
+            // button6
+            // 
+            this.button6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(19, 254);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(134, 41);
+            this.button6.TabIndex = 51;
+            this.button6.Text = "Registrer";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // label15
+            // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(41, 125);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(87, 30);
+            this.label15.TabIndex = 50;
+            this.label15.Text = "Fornavn";
+            // 
+            // dgvElever
+            // 
+            this.dgvElever.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvElever.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvElever.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
+            this.dgvElever.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvElever.Location = new System.Drawing.Point(348, 1);
+            this.dgvElever.Name = "dgvElever";
+            this.dgvElever.ReadOnly = true;
+            this.dgvElever.Size = new System.Drawing.Size(372, 390);
+            this.dgvElever.TabIndex = 49;
+            // 
+            // tabFag
+            // 
+            this.tabFag.Controls.Add(this.dgvFag);
+            this.tabFag.Controls.Add(this.butFagSlett);
+            this.tabFag.Controls.Add(this.butFagReg);
+            this.tabFag.Controls.Add(this.butFagEndre);
+            this.tabFag.Controls.Add(this.txtFagnavn);
+            this.tabFag.Controls.Add(this.label6);
+            this.tabFag.Controls.Add(this.label1);
+            this.tabFag.Location = new System.Drawing.Point(4, 22);
+            this.tabFag.Name = "tabFag";
+            this.tabFag.Padding = new System.Windows.Forms.Padding(3);
+            this.tabFag.Size = new System.Drawing.Size(728, 393);
+            this.tabFag.TabIndex = 3;
+            this.tabFag.Text = "Fag";
+            this.tabFag.UseVisualStyleBackColor = true;
+            // 
+            // dgvFag
+            // 
+            this.dgvFag.AllowUserToAddRows = false;
+            this.dgvFag.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFag.Dock = System.Windows.Forms.DockStyle.Right;
+            this.dgvFag.Location = new System.Drawing.Point(443, 3);
+            this.dgvFag.Name = "dgvFag";
+            this.dgvFag.ReadOnly = true;
+            this.dgvFag.Size = new System.Drawing.Size(282, 387);
+            this.dgvFag.TabIndex = 8;
+            // 
+            // butFagSlett
+            // 
+            this.butFagSlett.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.butFagSlett.FlatAppearance.BorderSize = 0;
+            this.butFagSlett.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.butFagSlett.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butFagSlett.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butFagSlett.Location = new System.Drawing.Point(284, 217);
+            this.butFagSlett.Name = "butFagSlett";
+            this.butFagSlett.Size = new System.Drawing.Size(128, 43);
+            this.butFagSlett.TabIndex = 7;
+            this.butFagSlett.Text = "Slett";
+            this.butFagSlett.UseVisualStyleBackColor = true;
+            // 
+            // butFagReg
+            // 
+            this.butFagReg.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.butFagReg.FlatAppearance.BorderSize = 0;
+            this.butFagReg.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.butFagReg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butFagReg.Font = new System.Drawing.Font("Segoe UI", 16.25F);
+            this.butFagReg.Location = new System.Drawing.Point(24, 217);
+            this.butFagReg.Name = "butFagReg";
+            this.butFagReg.Size = new System.Drawing.Size(128, 43);
+            this.butFagReg.TabIndex = 6;
+            this.butFagReg.Text = "Registrer";
+            this.butFagReg.UseVisualStyleBackColor = true;
+            this.butFagReg.Click += new System.EventHandler(this.butFagReg_Click);
+            // 
+            // butFagEndre
+            // 
+            this.butFagEndre.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.butFagEndre.FlatAppearance.BorderSize = 0;
+            this.butFagEndre.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.butFagEndre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butFagEndre.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butFagEndre.Location = new System.Drawing.Point(168, 217);
+            this.butFagEndre.Name = "butFagEndre";
+            this.butFagEndre.Size = new System.Drawing.Size(100, 43);
+            this.butFagEndre.TabIndex = 5;
+            this.butFagEndre.Text = "Endre";
+            this.butFagEndre.UseVisualStyleBackColor = true;
+            // 
+            // txtFagnavn
+            // 
+            this.txtFagnavn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtFagnavn.Location = new System.Drawing.Point(168, 136);
+            this.txtFagnavn.Name = "txtFagnavn";
+            this.txtFagnavn.Size = new System.Drawing.Size(163, 20);
+            this.txtFagnavn.TabIndex = 4;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(179, 20);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(60, 37);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Fag";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(48, 126);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(91, 30);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Fagnavn";
+            // 
+            // tabTester
+            // 
+            this.tabTester.Controls.Add(this.panelTester);
+            this.tabTester.Controls.Add(this.dgvTester);
+            this.tabTester.Location = new System.Drawing.Point(4, 22);
+            this.tabTester.Name = "tabTester";
+            this.tabTester.Padding = new System.Windows.Forms.Padding(3);
+            this.tabTester.Size = new System.Drawing.Size(728, 393);
+            this.tabTester.TabIndex = 4;
+            this.tabTester.Text = "Tester";
+            this.tabTester.UseVisualStyleBackColor = true;
+            // 
+            // tabBrukere
+            // 
+            this.tabBrukere.Controls.Add(this.panelBrukere);
+            this.tabBrukere.Controls.Add(this.dgvBrukere);
+            this.tabBrukere.Location = new System.Drawing.Point(4, 22);
+            this.tabBrukere.Name = "tabBrukere";
+            this.tabBrukere.Padding = new System.Windows.Forms.Padding(3);
+            this.tabBrukere.Size = new System.Drawing.Size(728, 393);
+            this.tabBrukere.TabIndex = 5;
+            this.tabBrukere.Text = "Brukere";
+            this.tabBrukere.UseVisualStyleBackColor = true;
+            // 
+            // panelBrukere
+            // 
+            this.panelBrukere.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelBrukere.Controls.Add(this.lblBrukere);
+            this.panelBrukere.Controls.Add(this.butBrukerTøm);
+            this.panelBrukere.Controls.Add(this.lblBrukerfornavn);
+            this.panelBrukere.Controls.Add(this.txtPass);
+            this.panelBrukere.Controls.Add(this.butRegBruker);
+            this.panelBrukere.Controls.Add(this.lblBrukerPassord);
+            this.panelBrukere.Controls.Add(this.lblBrukerBrukernavn);
+            this.panelBrukere.Controls.Add(this.lblBrukerEtternavn);
+            this.panelBrukere.Controls.Add(this.butSlett);
+            this.panelBrukere.Controls.Add(this.lblBrukerType);
+            this.panelBrukere.Controls.Add(this.butEndre);
+            this.panelBrukere.Controls.Add(this.txtBrukerBnavn);
+            this.panelBrukere.Controls.Add(this.cmbType);
+            this.panelBrukere.Controls.Add(this.txtFornavn);
+            this.panelBrukere.Controls.Add(this.txtEtternavn);
+            this.panelBrukere.Location = new System.Drawing.Point(-5, 0);
+            this.panelBrukere.Name = "panelBrukere";
+            this.panelBrukere.Size = new System.Drawing.Size(352, 393);
+            this.panelBrukere.TabIndex = 15;
+            // 
+            // lblBrukere
+            // 
+            this.lblBrukere.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblBrukere.AutoSize = true;
+            this.lblBrukere.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBrukere.Location = new System.Drawing.Point(90, 68);
+            this.lblBrukere.Name = "lblBrukere";
+            this.lblBrukere.Size = new System.Drawing.Size(106, 37);
+            this.lblBrukere.TabIndex = 77;
+            this.lblBrukere.Text = "Brukere";
+            // 
+            // butBrukerTøm
+            // 
+            this.butBrukerTøm.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.butBrukerTøm.FlatAppearance.BorderSize = 0;
+            this.butBrukerTøm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.butBrukerTøm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butBrukerTøm.Font = new System.Drawing.Font("Segoe UI", 15.75F);
+            this.butBrukerTøm.Location = new System.Drawing.Point(264, 274);
+            this.butBrukerTøm.Name = "butBrukerTøm";
+            this.butBrukerTøm.Size = new System.Drawing.Size(74, 48);
+            this.butBrukerTøm.TabIndex = 80;
+            this.butBrukerTøm.Text = "Tøm";
+            this.butBrukerTøm.UseVisualStyleBackColor = true;
+            this.butBrukerTøm.Click += new System.EventHandler(this.butBrukerTøm_Click);
+            // 
+            // lblBrukerfornavn
+            // 
+            this.lblBrukerfornavn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblBrukerfornavn.AutoSize = true;
+            this.lblBrukerfornavn.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBrukerfornavn.Location = new System.Drawing.Point(32, 150);
+            this.lblBrukerfornavn.Name = "lblBrukerfornavn";
+            this.lblBrukerfornavn.Size = new System.Drawing.Size(87, 30);
+            this.lblBrukerfornavn.TabIndex = 66;
+            this.lblBrukerfornavn.Text = "Fornavn";
+            // 
+            // txtPass
+            // 
+            this.txtPass.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtPass.Location = new System.Drawing.Point(155, 249);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(100, 20);
+            this.txtPass.TabIndex = 74;
+            this.txtPass.UseSystemPasswordChar = true;
+            // 
+            // butRegBruker
+            // 
+            this.butRegBruker.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.butRegBruker.FlatAppearance.BorderSize = 0;
+            this.butRegBruker.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.butRegBruker.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butRegBruker.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butRegBruker.Location = new System.Drawing.Point(13, 279);
+            this.butRegBruker.Name = "butRegBruker";
+            this.butRegBruker.Size = new System.Drawing.Size(104, 41);
+            this.butRegBruker.TabIndex = 75;
+            this.butRegBruker.Text = "Registrer";
+            this.butRegBruker.UseVisualStyleBackColor = true;
+            this.butRegBruker.Click += new System.EventHandler(this.butRegBruker_Click);
+            // 
+            // lblBrukerPassord
+            // 
+            this.lblBrukerPassord.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblBrukerPassord.AutoSize = true;
+            this.lblBrukerPassord.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBrukerPassord.Location = new System.Drawing.Point(32, 242);
+            this.lblBrukerPassord.Name = "lblBrukerPassord";
+            this.lblBrukerPassord.Size = new System.Drawing.Size(85, 30);
+            this.lblBrukerPassord.TabIndex = 79;
+            this.lblBrukerPassord.Text = "Passord";
+            // 
+            // lblBrukerBrukernavn
+            // 
+            this.lblBrukerBrukernavn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblBrukerBrukernavn.AutoSize = true;
+            this.lblBrukerBrukernavn.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBrukerBrukernavn.Location = new System.Drawing.Point(32, 120);
+            this.lblBrukerBrukernavn.Name = "lblBrukerBrukernavn";
+            this.lblBrukerBrukernavn.Size = new System.Drawing.Size(117, 30);
+            this.lblBrukerBrukernavn.TabIndex = 67;
+            this.lblBrukerBrukernavn.Text = "Brukernavn";
+            // 
+            // lblBrukerEtternavn
+            // 
+            this.lblBrukerEtternavn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblBrukerEtternavn.AutoSize = true;
+            this.lblBrukerEtternavn.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBrukerEtternavn.Location = new System.Drawing.Point(32, 179);
+            this.lblBrukerEtternavn.Name = "lblBrukerEtternavn";
+            this.lblBrukerEtternavn.Size = new System.Drawing.Size(101, 30);
+            this.lblBrukerEtternavn.TabIndex = 68;
+            this.lblBrukerEtternavn.Text = "Etternavn";
+            // 
+            // butSlett
+            // 
+            this.butSlett.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.butSlett.FlatAppearance.BorderSize = 0;
+            this.butSlett.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.butSlett.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butSlett.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butSlett.Location = new System.Drawing.Point(192, 275);
+            this.butSlett.Name = "butSlett";
+            this.butSlett.Size = new System.Drawing.Size(74, 47);
+            this.butSlett.TabIndex = 78;
+            this.butSlett.Text = "Slett";
+            this.butSlett.UseVisualStyleBackColor = true;
+            this.butSlett.Click += new System.EventHandler(this.butSlett_Click_1);
+            // 
+            // lblBrukerType
+            // 
+            this.lblBrukerType.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblBrukerType.AutoSize = true;
+            this.lblBrukerType.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBrukerType.Location = new System.Drawing.Point(32, 209);
+            this.lblBrukerType.Name = "lblBrukerType";
+            this.lblBrukerType.Size = new System.Drawing.Size(57, 30);
+            this.lblBrukerType.TabIndex = 69;
+            this.lblBrukerType.Text = "Type";
+            // 
+            // butEndre
+            // 
+            this.butEndre.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.butEndre.FlatAppearance.BorderSize = 0;
+            this.butEndre.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.butEndre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butEndre.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butEndre.Location = new System.Drawing.Point(121, 277);
+            this.butEndre.Name = "butEndre";
+            this.butEndre.Size = new System.Drawing.Size(74, 43);
+            this.butEndre.TabIndex = 76;
+            this.butEndre.Text = "Endre";
+            this.butEndre.UseVisualStyleBackColor = true;
+            this.butEndre.Click += new System.EventHandler(this.butEndre_Click_1);
+            // 
+            // txtBrukerBnavn
+            // 
+            this.txtBrukerBnavn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtBrukerBnavn.Location = new System.Drawing.Point(155, 126);
+            this.txtBrukerBnavn.Name = "txtBrukerBnavn";
+            this.txtBrukerBnavn.Size = new System.Drawing.Size(100, 20);
+            this.txtBrukerBnavn.TabIndex = 70;
+            // 
+            // cmbType
+            // 
+            this.cmbType.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cmbType.FormattingEnabled = true;
+            this.cmbType.Location = new System.Drawing.Point(155, 215);
+            this.cmbType.Name = "cmbType";
+            this.cmbType.Size = new System.Drawing.Size(100, 21);
+            this.cmbType.TabIndex = 73;
+            // 
+            // txtFornavn
+            // 
+            this.txtFornavn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtFornavn.Location = new System.Drawing.Point(155, 153);
+            this.txtFornavn.Name = "txtFornavn";
+            this.txtFornavn.Size = new System.Drawing.Size(100, 20);
+            this.txtFornavn.TabIndex = 71;
+            // 
+            // txtEtternavn
+            // 
+            this.txtEtternavn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtEtternavn.Location = new System.Drawing.Point(155, 182);
+            this.txtEtternavn.Name = "txtEtternavn";
+            this.txtEtternavn.Size = new System.Drawing.Size(100, 20);
+            this.txtEtternavn.TabIndex = 72;
+            // 
+            // dgvBrukere
+            // 
+            this.dgvBrukere.AllowUserToAddRows = false;
+            this.dgvBrukere.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.dgvBrukere.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvBrukere.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.dgvBrukere.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgvBrukere.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBrukere.Location = new System.Drawing.Point(353, 0);
+            this.dgvBrukere.Name = "dgvBrukere";
+            this.dgvBrukere.ReadOnly = true;
+            this.dgvBrukere.RowHeadersVisible = false;
+            this.dgvBrukere.RowTemplate.Height = 18;
+            this.dgvBrukere.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvBrukere.Size = new System.Drawing.Size(372, 393);
+            this.dgvBrukere.TabIndex = 14;
+            this.dgvBrukere.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBrukere_CellClick);
+            this.dgvBrukere.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBrukere_CellContentClick);
+            // 
+            // tabKlasser
+            // 
+            this.tabKlasser.Controls.Add(this.panelKlasser);
+            this.tabKlasser.Controls.Add(this.dgvKlasser);
+            this.tabKlasser.Location = new System.Drawing.Point(4, 22);
+            this.tabKlasser.Name = "tabKlasser";
+            this.tabKlasser.Padding = new System.Windows.Forms.Padding(3);
+            this.tabKlasser.Size = new System.Drawing.Size(728, 393);
+            this.tabKlasser.TabIndex = 6;
+            this.tabKlasser.Text = "Klasser";
+            this.tabKlasser.UseVisualStyleBackColor = true;
+            // 
+            // lblBrukerstatus
+            // 
+            this.lblBrukerstatus.AutoSize = true;
+            this.lblBrukerstatus.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblBrukerstatus.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblBrukerstatus.Location = new System.Drawing.Point(0, 447);
+            this.lblBrukerstatus.Name = "lblBrukerstatus";
+            this.lblBrukerstatus.Size = new System.Drawing.Size(47, 19);
+            this.lblBrukerstatus.TabIndex = 14;
+            this.lblBrukerstatus.Text = "Status";
+            // 
+            // dgvKlasser
+            // 
+            this.dgvKlasser.AllowUserToAddRows = false;
+            this.dgvKlasser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.dgvKlasser.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvKlasser.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.dgvKlasser.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgvKlasser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKlasser.Location = new System.Drawing.Point(356, 0);
+            this.dgvKlasser.Name = "dgvKlasser";
+            this.dgvKlasser.ReadOnly = true;
+            this.dgvKlasser.RowHeadersVisible = false;
+            this.dgvKlasser.RowTemplate.Height = 18;
+            this.dgvKlasser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvKlasser.Size = new System.Drawing.Size(372, 393);
+            this.dgvKlasser.TabIndex = 65;
+            // 
+            // panelKlasser
+            // 
+            this.panelKlasser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelKlasser.Controls.Add(this.lblKlasser);
+            this.panelKlasser.Controls.Add(this.butKlasseTøm);
+            this.panelKlasser.Controls.Add(this.lblSkoleår);
+            this.panelKlasser.Controls.Add(this.butKlasseReg);
+            this.panelKlasser.Controls.Add(this.lblBetegnelse);
+            this.panelKlasser.Controls.Add(this.butKlasseSlett);
+            this.panelKlasser.Controls.Add(this.butKlasseEndre);
+            this.panelKlasser.Controls.Add(this.txtBetegnelse);
+            this.panelKlasser.Controls.Add(this.txtSkoleår);
+            this.panelKlasser.Location = new System.Drawing.Point(-5, 0);
+            this.panelKlasser.Name = "panelKlasser";
+            this.panelKlasser.Size = new System.Drawing.Size(352, 393);
+            this.panelKlasser.TabIndex = 66;
+            // 
+            // lblKlasser
+            // 
+            this.lblKlasser.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblKlasser.AutoSize = true;
+            this.lblKlasser.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKlasser.Location = new System.Drawing.Point(90, 68);
+            this.lblKlasser.Name = "lblKlasser";
+            this.lblKlasser.Size = new System.Drawing.Size(99, 37);
+            this.lblKlasser.TabIndex = 77;
+            this.lblKlasser.Text = "Klasser";
+            // 
+            // butKlasseTøm
+            // 
+            this.butKlasseTøm.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.butKlasseTøm.FlatAppearance.BorderSize = 0;
+            this.butKlasseTøm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.butKlasseTøm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butKlasseTøm.Font = new System.Drawing.Font("Segoe UI", 15.75F);
+            this.butKlasseTøm.Location = new System.Drawing.Point(259, 180);
+            this.butKlasseTøm.Name = "butKlasseTøm";
+            this.butKlasseTøm.Size = new System.Drawing.Size(74, 48);
+            this.butKlasseTøm.TabIndex = 80;
+            this.butKlasseTøm.Text = "Tøm";
+            this.butKlasseTøm.UseVisualStyleBackColor = true;
+            // 
+            // lblSkoleår
+            // 
+            this.lblSkoleår.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblSkoleår.AutoSize = true;
+            this.lblSkoleår.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSkoleår.Location = new System.Drawing.Point(32, 150);
+            this.lblSkoleår.Name = "lblSkoleår";
+            this.lblSkoleår.Size = new System.Drawing.Size(80, 30);
+            this.lblSkoleår.TabIndex = 66;
+            this.lblSkoleår.Text = "Skoleår";
+            // 
+            // butKlasseReg
+            // 
+            this.butKlasseReg.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.butKlasseReg.FlatAppearance.BorderSize = 0;
+            this.butKlasseReg.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.butKlasseReg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butKlasseReg.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butKlasseReg.Location = new System.Drawing.Point(8, 185);
+            this.butKlasseReg.Name = "butKlasseReg";
+            this.butKlasseReg.Size = new System.Drawing.Size(104, 41);
+            this.butKlasseReg.TabIndex = 75;
+            this.butKlasseReg.Text = "Registrer";
+            this.butKlasseReg.UseVisualStyleBackColor = true;
+            // 
+            // lblBetegnelse
+            // 
+            this.lblBetegnelse.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblBetegnelse.AutoSize = true;
+            this.lblBetegnelse.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBetegnelse.Location = new System.Drawing.Point(32, 120);
+            this.lblBetegnelse.Name = "lblBetegnelse";
+            this.lblBetegnelse.Size = new System.Drawing.Size(114, 30);
+            this.lblBetegnelse.TabIndex = 67;
+            this.lblBetegnelse.Text = "Betegnelse";
+            // 
+            // butKlasseSlett
+            // 
+            this.butKlasseSlett.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.butKlasseSlett.FlatAppearance.BorderSize = 0;
+            this.butKlasseSlett.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.butKlasseSlett.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butKlasseSlett.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butKlasseSlett.Location = new System.Drawing.Point(187, 181);
+            this.butKlasseSlett.Name = "butKlasseSlett";
+            this.butKlasseSlett.Size = new System.Drawing.Size(74, 47);
+            this.butKlasseSlett.TabIndex = 78;
+            this.butKlasseSlett.Text = "Slett";
+            this.butKlasseSlett.UseVisualStyleBackColor = true;
+            // 
+            // butKlasseEndre
+            // 
+            this.butKlasseEndre.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.butKlasseEndre.FlatAppearance.BorderSize = 0;
+            this.butKlasseEndre.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.butKlasseEndre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butKlasseEndre.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butKlasseEndre.Location = new System.Drawing.Point(116, 183);
+            this.butKlasseEndre.Name = "butKlasseEndre";
+            this.butKlasseEndre.Size = new System.Drawing.Size(74, 43);
+            this.butKlasseEndre.TabIndex = 76;
+            this.butKlasseEndre.Text = "Endre";
+            this.butKlasseEndre.UseVisualStyleBackColor = true;
+            // 
+            // txtBetegnelse
+            // 
+            this.txtBetegnelse.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtBetegnelse.Location = new System.Drawing.Point(155, 126);
+            this.txtBetegnelse.Name = "txtBetegnelse";
+            this.txtBetegnelse.Size = new System.Drawing.Size(100, 20);
+            this.txtBetegnelse.TabIndex = 70;
+            // 
+            // txtSkoleår
+            // 
+            this.txtSkoleår.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtSkoleår.Location = new System.Drawing.Point(155, 153);
+            this.txtSkoleår.Name = "txtSkoleår";
+            this.txtSkoleår.Size = new System.Drawing.Size(100, 20);
+            this.txtSkoleår.TabIndex = 71;
+            // 
+            // panelTester
+            // 
+            this.panelTester.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelTester.Controls.Add(this.lblTester);
+            this.panelTester.Controls.Add(this.butTestTøm);
+            this.panelTester.Controls.Add(this.lblTestdato);
+            this.panelTester.Controls.Add(this.butTestReg);
+            this.panelTester.Controls.Add(this.lblTestfil);
+            this.panelTester.Controls.Add(this.lblTestnavn);
+            this.panelTester.Controls.Add(this.butTestSlett);
+            this.panelTester.Controls.Add(this.lblTestfag);
+            this.panelTester.Controls.Add(this.butTestEndre);
+            this.panelTester.Controls.Add(this.txtTestnavn);
+            this.panelTester.Controls.Add(this.cmbTestfag);
+            this.panelTester.Controls.Add(this.txtTestdato);
+            this.panelTester.Location = new System.Drawing.Point(-1, 0);
+            this.panelTester.Name = "panelTester";
+            this.panelTester.Size = new System.Drawing.Size(352, 393);
+            this.panelTester.TabIndex = 17;
+            // 
+            // lblTester
+            // 
+            this.lblTester.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblTester.AutoSize = true;
+            this.lblTester.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTester.Location = new System.Drawing.Point(90, 68);
+            this.lblTester.Name = "lblTester";
+            this.lblTester.Size = new System.Drawing.Size(88, 37);
+            this.lblTester.TabIndex = 77;
+            this.lblTester.Text = "Tester";
+            // 
+            // butTestTøm
+            // 
+            this.butTestTøm.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.butTestTøm.FlatAppearance.BorderSize = 0;
+            this.butTestTøm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.butTestTøm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butTestTøm.Font = new System.Drawing.Font("Segoe UI", 15.75F);
+            this.butTestTøm.Location = new System.Drawing.Point(264, 251);
+            this.butTestTøm.Name = "butTestTøm";
+            this.butTestTøm.Size = new System.Drawing.Size(74, 48);
+            this.butTestTøm.TabIndex = 80;
+            this.butTestTøm.Text = "Tøm";
+            this.butTestTøm.UseVisualStyleBackColor = true;
+            // 
+            // lblTestdato
+            // 
+            this.lblTestdato.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblTestdato.AutoSize = true;
+            this.lblTestdato.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTestdato.Location = new System.Drawing.Point(32, 150);
+            this.lblTestdato.Name = "lblTestdato";
+            this.lblTestdato.Size = new System.Drawing.Size(58, 30);
+            this.lblTestdato.TabIndex = 66;
+            this.lblTestdato.Text = "Dato";
+            // 
+            // butTestReg
+            // 
+            this.butTestReg.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.butTestReg.FlatAppearance.BorderSize = 0;
+            this.butTestReg.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.butTestReg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butTestReg.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butTestReg.Location = new System.Drawing.Point(13, 256);
+            this.butTestReg.Name = "butTestReg";
+            this.butTestReg.Size = new System.Drawing.Size(104, 41);
+            this.butTestReg.TabIndex = 75;
+            this.butTestReg.Text = "Registrer";
+            this.butTestReg.UseVisualStyleBackColor = true;
+            // 
+            // lblTestfil
+            // 
+            this.lblTestfil.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblTestfil.AutoSize = true;
+            this.lblTestfil.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTestfil.Location = new System.Drawing.Point(32, 219);
+            this.lblTestfil.Name = "lblTestfil";
+            this.lblTestfil.Size = new System.Drawing.Size(33, 30);
+            this.lblTestfil.TabIndex = 79;
+            this.lblTestfil.Text = "Fil";
+            // 
+            // lblTestnavn
+            // 
+            this.lblTestnavn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblTestnavn.AutoSize = true;
+            this.lblTestnavn.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTestnavn.Location = new System.Drawing.Point(32, 120);
+            this.lblTestnavn.Name = "lblTestnavn";
+            this.lblTestnavn.Size = new System.Drawing.Size(62, 30);
+            this.lblTestnavn.TabIndex = 67;
+            this.lblTestnavn.Text = "Navn";
+            // 
+            // butTestSlett
+            // 
+            this.butTestSlett.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.butTestSlett.FlatAppearance.BorderSize = 0;
+            this.butTestSlett.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.butTestSlett.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butTestSlett.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butTestSlett.Location = new System.Drawing.Point(192, 252);
+            this.butTestSlett.Name = "butTestSlett";
+            this.butTestSlett.Size = new System.Drawing.Size(74, 47);
+            this.butTestSlett.TabIndex = 78;
+            this.butTestSlett.Text = "Slett";
+            this.butTestSlett.UseVisualStyleBackColor = true;
+            // 
+            // lblTestfag
+            // 
+            this.lblTestfag.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblTestfag.AutoSize = true;
+            this.lblTestfag.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTestfag.Location = new System.Drawing.Point(32, 186);
+            this.lblTestfag.Name = "lblTestfag";
+            this.lblTestfag.Size = new System.Drawing.Size(46, 30);
+            this.lblTestfag.TabIndex = 69;
+            this.lblTestfag.Text = "Fag";
+            // 
+            // butTestEndre
+            // 
+            this.butTestEndre.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.butTestEndre.FlatAppearance.BorderSize = 0;
+            this.butTestEndre.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.butTestEndre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butTestEndre.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butTestEndre.Location = new System.Drawing.Point(121, 254);
+            this.butTestEndre.Name = "butTestEndre";
+            this.butTestEndre.Size = new System.Drawing.Size(74, 43);
+            this.butTestEndre.TabIndex = 76;
+            this.butTestEndre.Text = "Endre";
+            this.butTestEndre.UseVisualStyleBackColor = true;
+            // 
+            // txtTestnavn
+            // 
+            this.txtTestnavn.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtTestnavn.Location = new System.Drawing.Point(155, 126);
+            this.txtTestnavn.Name = "txtTestnavn";
+            this.txtTestnavn.Size = new System.Drawing.Size(100, 20);
+            this.txtTestnavn.TabIndex = 70;
+            // 
+            // cmbTestfag
+            // 
+            this.cmbTestfag.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cmbTestfag.FormattingEnabled = true;
+            this.cmbTestfag.Location = new System.Drawing.Point(155, 192);
+            this.cmbTestfag.Name = "cmbTestfag";
+            this.cmbTestfag.Size = new System.Drawing.Size(100, 21);
+            this.cmbTestfag.TabIndex = 73;
+            // 
+            // txtTestdato
+            // 
+            this.txtTestdato.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtTestdato.Location = new System.Drawing.Point(155, 153);
+            this.txtTestdato.Name = "txtTestdato";
+            this.txtTestdato.Size = new System.Drawing.Size(100, 20);
+            this.txtTestdato.TabIndex = 71;
+            // 
+            // dgvTester
+            // 
+            this.dgvTester.AllowUserToAddRows = false;
+            this.dgvTester.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.dgvTester.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvTester.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.dgvTester.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dgvTester.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTester.Location = new System.Drawing.Point(357, 0);
+            this.dgvTester.Name = "dgvTester";
+            this.dgvTester.ReadOnly = true;
+            this.dgvTester.RowHeadersVisible = false;
+            this.dgvTester.RowTemplate.Height = 18;
+            this.dgvTester.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvTester.Size = new System.Drawing.Size(372, 393);
+            this.dgvTester.TabIndex = 16;
+            // 
+            // frmHoved
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(866, 466);
+            this.Controls.Add(this.lblBrukerstatus);
+            this.Controls.Add(this.tabcontrol);
+            this.Controls.Add(this.panelType);
+            this.Controls.Add(this.lblStatus);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "frmHoved";
+            this.Text = "Nes Barneskole";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmHoved_closing);
+            this.Load += new System.EventHandler(this.frmHoved_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.panelType.ResumeLayout(false);
+            this.tabcontrol.ResumeLayout(false);
+            this.tabVisning.ResumeLayout(false);
+            this.tabVisning.PerformLayout();
+            this.tabResultat.ResumeLayout(false);
+            this.tabResultat.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResultat)).EndInit();
+            this.tabElever.ResumeLayout(false);
+            this.tabElever.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvElever)).EndInit();
+            this.tabFag.ResumeLayout(false);
+            this.tabFag.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFag)).EndInit();
+            this.tabTester.ResumeLayout(false);
+            this.tabBrukere.ResumeLayout(false);
+            this.panelBrukere.ResumeLayout(false);
+            this.panelBrukere.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBrukere)).EndInit();
+            this.tabKlasser.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKlasser)).EndInit();
+            this.panelKlasser.ResumeLayout(false);
+            this.panelKlasser.PerformLayout();
+            this.panelTester.ResumeLayout(false);
+            this.panelTester.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTester)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button butResultat;
+        private System.Windows.Forms.Button butVisning;
+        private System.Windows.Forms.Button butTester;
+        private System.Windows.Forms.Button butBrukere;
+        private System.Windows.Forms.Button butElever;
+        private System.Windows.Forms.Button butKlasser;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem filToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem administreringToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hjelpToolStripMenuItem;
+        private System.Windows.Forms.Button butFag;
+        private System.Windows.Forms.ToolStripMenuItem loggUtToolStripMenuItem;
+        private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.Panel panelType;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TabControl tabcontrol;
+        private System.Windows.Forms.TabPage tabVisning;
+        private System.Windows.Forms.TabPage tabResultat;
+        private System.Windows.Forms.TabPage tabElever;
+        private System.Windows.Forms.TabPage tabFag;
+        private System.Windows.Forms.TabPage tabTester;
+        private System.Windows.Forms.TabPage tabBrukere;
+        private System.Windows.Forms.TabPage tabKlasser;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolStripMenuItem mnyAvslutt;
+        private ToolStripMenuItem omToolStripMenuItem;
+        private Label label1;
+        private DataGridView dgvBrukere;
+        private Label lblBrukerstatus;
+        private DataGridView dgvFag;
+        private Button butFagSlett;
+        private Button butFagReg;
+        private Button butFagEndre;
+        private TextBox txtFagnavn;
+        private Label label6;
+        private Label label4;
+        private Button button4;
+        private Button button5;
+        private ComboBox comboBox1;
+        private TextBox textBox1;
+        private TextBox textBox3;
+        private TextBox textBox5;
+        private TextBox textBox6;
+        private Label label7;
+        private Label label10;
+        private Label label11;
+        private Label label14;
+        private Button button6;
+        private Label label15;
+        private DataGridView dgvElever;
+        private DataGridView dgvResultat;
+        private ComboBox comboBox2;
+        private Label label16;
+        private TextBox textBox9;
+        private Label label22;
+        private ComboBox comboBox4;
+        private Label label21;
+        private ComboBox comboBox3;
+        private Label label17;
+        private Label label3;
+        private Button button7;
+        private Button button8;
+        private TextBox textBox7;
+        private TextBox textBox8;
+        private TextBox textBox10;
+        private Label label18;
+        private Label label19;
+        private Label label20;
+        private Button button9;
+        private Panel panelBrukere;
+        private Label lblBrukere;
+        private Button butBrukerTøm;
+        private Label lblBrukerfornavn;
+        private TextBox txtPass;
+        private Button butRegBruker;
+        private Label lblBrukerPassord;
+        private Label lblBrukerBrukernavn;
+        private Label lblBrukerEtternavn;
+        private Button butSlett;
+        private Label lblBrukerType;
+        private Button butEndre;
+        private TextBox txtBrukerBnavn;
+        private ComboBox cmbType;
+        private TextBox txtFornavn;
+        private TextBox txtEtternavn;
+        private Panel panelKlasser;
+        private Label lblKlasser;
+        private Button butKlasseTøm;
+        private Label lblSkoleår;
+        private Button butKlasseReg;
+        private Label lblBetegnelse;
+        private Button butKlasseSlett;
+        private Button butKlasseEndre;
+        private TextBox txtBetegnelse;
+        private TextBox txtSkoleår;
+        private DataGridView dgvKlasser;
+        private Panel panelTester;
+        private Label lblTester;
+        private Button butTestTøm;
+        private Label lblTestdato;
+        private Button butTestReg;
+        private Label lblTestfil;
+        private Label lblTestnavn;
+        private Button butTestSlett;
+        private Label lblTestfag;
+        private Button butTestEndre;
+        private TextBox txtTestnavn;
+        private ComboBox cmbTestfag;
+        private TextBox txtTestdato;
+        private DataGridView dgvTester;
+    }
+}
+
